@@ -729,6 +729,10 @@
 					if (event.keyCode == 27)
 						$modal.trigger('click');
 
+				// Tab? Hide modal.
+					if (event.keyCode == 9)
+						$modal.trigger('click');
+
 			})
 			.on('mouseup mousedown mousemove', '.modal', function(event) {
 
@@ -736,7 +740,7 @@
 					event.stopPropagation();
 
 			})
-			.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
+			.prepend('<div class="modal" tabIndex="-1><div class="inner"><img src="" /></div></div>')
 				.find('img')
 					.on('load', function(event) {
 
