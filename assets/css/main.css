@@ -72,6 +72,18 @@ input, select, textarea {
 	appearance: none;
 }
 
+:focus {
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+}
+
+a:focus {
+	border: 2px solid #ffffff;
+	color: #ffe4b4;
+	padding: 3px;
+}
+
 /* Page */
 
 	@-moz-keyframes load-spinner {
